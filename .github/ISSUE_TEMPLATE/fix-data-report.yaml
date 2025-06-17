@@ -15,7 +15,6 @@ body:
       label: Visa ID
       description: Please enter the visa ID
       placeholder: e.g. 24431
-      value: "Incorrect data happened!"
     validations:
       required: true
   - type: dropdown
