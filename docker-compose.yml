@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: passport_visa_api
+    ports:
+      - 1116:8080
+    volumes:
+      - .:/app
+    networks:
+      - local-development
+    depends_on:
+      - postgres
+  postgres:
+    image: postgres:latest
+    ports:
+      - 5430:5432
+    networks:
+      - local-development
+    healthcheck:
+        test: ["CMD-SHELL", "pg_isready -U user"]
+        interval: 10s
+        timeout: 5s
+        retries: 5
+    environment:
+      # PostgreSQL Kullanıcı ve Veritabanı Ayarları
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_USER=user
+      - POSTGRES_DB=laravel
+
+networks:
+  local-development:
+    driver: bridge
