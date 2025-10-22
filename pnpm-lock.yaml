@@ -10,19 +10,19 @@ importers:
     dependencies:
       '@hono/node-server':
         specifier: ^1.13.4
-        version: 1.19.4(hono@4.9.8)
+        version: 1.19.4(hono@4.10.2)
       '@hono/zod-openapi':
         specifier: ^0.16.4
-        version: 0.16.4(hono@4.9.8)(zod@3.25.76)
+        version: 0.16.4(hono@4.10.2)(zod@3.25.76)
       '@hono/zod-validator':
         specifier: ^0.4.1
-        version: 0.4.3(hono@4.9.8)(zod@3.25.76)
+        version: 0.4.3(hono@4.10.2)(zod@3.25.76)
       drizzle-orm:
         specifier: ^0.36.0
         version: 0.36.4(pg@8.16.3)(postgres@3.4.7)
       hono:
-        specifier: ^4.6.8
-        version: 4.9.8
+        specifier: ^4.10.2
+        version: 4.10.2
       pg:
         specifier: ^8.13.1
         version: 8.16.3
@@ -31,7 +31,7 @@ importers:
         version: 3.4.7
       stoker:
         specifier: ^1.3.0
-        version: 1.4.3(@asteasolutions/zod-to-openapi@7.3.4(zod@3.25.76))(@hono/zod-openapi@0.16.4(hono@4.9.8)(zod@3.25.76))(hono@4.9.8)(openapi3-ts@4.5.0)
+        version: 1.4.3(@asteasolutions/zod-to-openapi@7.3.4(zod@3.25.76))(@hono/zod-openapi@0.16.4(hono@4.10.2)(zod@3.25.76))(hono@4.10.2)(openapi3-ts@4.5.0)
       zod:
         specifier: ^3.23.8
         version: 3.25.76
@@ -654,8 +654,8 @@ packages:
   get-tsconfig@4.10.1:
     resolution: {integrity: sha512-auHyJ4AgMz7vgS8Hp3N6HXSmlMdUyhSUrfBF16w153rxtLIEOE+HGqaBppczZvnHLqQJfiHotCYpNhl0lUROFQ==}
 
-  hono@4.9.8:
-    resolution: {integrity: sha512-JW8Bb4RFWD9iOKxg5PbUarBYGM99IcxFl2FPBo2gSJO11jjUDqlP1Bmfyqt8Z/dGhIQ63PMA9LdcLefXyIasyg==}
+  hono@4.10.2:
+    resolution: {integrity: sha512-p6fyzl+mQo6uhESLxbF5WlBOAJMDh36PljwlKtP5V1v09NxlqGru3ShK+4wKhSuhuYf8qxMmrivHOa/M7q0sMg==}
     engines: {node: '>=16.9.0'}
 
   ms@2.1.3:
@@ -999,25 +999,25 @@ snapshots:
   '@esbuild/win32-x64@0.25.10':
     optional: true
 
-  '@hono/node-server@1.19.4(hono@4.9.8)':
+  '@hono/node-server@1.19.4(hono@4.10.2)':
     dependencies:
-      hono: 4.9.8
+      hono: 4.10.2
 
-  '@hono/zod-openapi@0.16.4(hono@4.9.8)(zod@3.25.76)':
+  '@hono/zod-openapi@0.16.4(hono@4.10.2)(zod@3.25.76)':
     dependencies:
       '@asteasolutions/zod-to-openapi': 7.3.4(zod@3.25.76)
-      '@hono/zod-validator': 0.3.0(hono@4.9.8)(zod@3.25.76)
-      hono: 4.9.8
+      '@hono/zod-validator': 0.3.0(hono@4.10.2)(zod@3.25.76)
+      hono: 4.10.2
       zod: 3.25.76
 
-  '@hono/zod-validator@0.3.0(hono@4.9.8)(zod@3.25.76)':
+  '@hono/zod-validator@0.3.0(hono@4.10.2)(zod@3.25.76)':
     dependencies:
-      hono: 4.9.8
+      hono: 4.10.2
       zod: 3.25.76
 
-  '@hono/zod-validator@0.4.3(hono@4.9.8)(zod@3.25.76)':
+  '@hono/zod-validator@0.4.3(hono@4.10.2)(zod@3.25.76)':
     dependencies:
-      hono: 4.9.8
+      hono: 4.10.2
       zod: 3.25.76
 
   '@types/node@20.19.17':
@@ -1138,7 +1138,7 @@ snapshots:
     dependencies:
       resolve-pkg-maps: 1.0.0
 
-  hono@4.9.8: {}
+  hono@4.10.2: {}
 
   ms@2.1.3: {}
 
@@ -1204,12 +1204,12 @@ snapshots:
 
   split2@4.2.0: {}
 
-  stoker@1.4.3(@asteasolutions/zod-to-openapi@7.3.4(zod@3.25.76))(@hono/zod-openapi@0.16.4(hono@4.9.8)(zod@3.25.76))(hono@4.9.8)(openapi3-ts@4.5.0):
+  stoker@1.4.3(@asteasolutions/zod-to-openapi@7.3.4(zod@3.25.76))(@hono/zod-openapi@0.16.4(hono@4.10.2)(zod@3.25.76))(hono@4.10.2)(openapi3-ts@4.5.0):
     dependencies:
-      hono: 4.9.8
+      hono: 4.10.2
     optionalDependencies:
       '@asteasolutions/zod-to-openapi': 7.3.4(zod@3.25.76)
-      '@hono/zod-openapi': 0.16.4(hono@4.9.8)(zod@3.25.76)
+      '@hono/zod-openapi': 0.16.4(hono@4.10.2)(zod@3.25.76)
       openapi3-ts: 4.5.0
 
   tsx@4.20.5:
